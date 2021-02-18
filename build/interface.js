@@ -1,8 +1,8 @@
 "use strict";
 class Macbook {
-    constructor() {
-        this.name = "Macbook Pro 2021";
-        this.isExpensive = true;
+    constructor(name, isExpensive) {
+        this.name = name;
+        this.isExpensive = isExpensive;
     }
     on() {
         console.log("nyala");
@@ -12,9 +12,9 @@ class Macbook {
     }
 }
 class Asus {
-    constructor() {
-        this.name = "Asus ROG";
-        this.isGaming = true;
+    constructor(name, isGaming) {
+        this.name = name;
+        this.isGaming = isGaming;
     }
     on() {
         console.log("nyala");
@@ -23,12 +23,12 @@ class Asus {
         console.log("mati");
     }
 }
-const mac = new Macbook();
+const mac = new Macbook("Macbook Pro 2021", true);
 mac.on();
 console.log(mac.name);
 mac.off();
 console.log('---------------');
-const asus = new Asus();
+const asus = new Asus("Asus ROG", true);
 asus.on();
 console.log(asus.name);
 asus.off();
