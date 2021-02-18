@@ -1,5 +1,5 @@
 "use strict";
-var data = {
+const data = {
     name: "Messi",
     no: 10,
     club: "Barcelona",

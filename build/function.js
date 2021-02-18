@@ -9,19 +9,18 @@ function NoReturn() {
 }
 NoReturn();
 console.log(getName("prio"));
-var AddNumber = function (val1, val2) {
+const AddNumber = (val1, val2) => {
     return val1 + val2;
 };
 console.log(AddNumber(1, 2));
 // console.log(AddNumber(1, "2")) error because string no allowed
 // default parameter
-var greeting = function (firstName, lastName) {
-    if (lastName === void 0) { lastName = "gunawan"; }
+const greeting = (firstName, lastName = "gunawan") => {
     return firstName + " " + lastName;
 };
 console.log(greeting("Prio Arief", "Dybala"));
 // optional parameter
-var getMaritalStatus = function (name, wifeName) {
+const getMaritalStatus = (name, wifeName) => {
     return name + ' ' + wifeName;
 };
 console.log(getMaritalStatus('Alifki'));
