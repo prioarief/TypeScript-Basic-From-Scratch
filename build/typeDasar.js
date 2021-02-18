@@ -1,6 +1,6 @@
 "use strict";
 // String
-var my_name = 'Prio';
+var my_name = "Prio";
 // Number
 var age = 18;
 // Boolean
@@ -12,7 +12,7 @@ heroes = 20;
 var array = [1, 2, 3];
 // tuples
 var biodata;
-biodata = ['Tangerang', 18]; // no error
+biodata = ["Tangerang", 18]; // no error
 // biodata = ['Tangerang', true] //  error
 // biodata = ['Tangerang', 20, 20] //  error, because biodata is not assignable to type '[string, number]'. Source has 3 element(s) but target allows only 2
 // enum
@@ -29,3 +29,8 @@ var month;
     month["FEB"] = "Februari";
     month["MAR"] = "Maret";
 })(month || (month = {}));
+// union type
+var phoneNumber = 6289283928;
+console.log(phoneNumber);
+phoneNumber = '0895494949';
+console.log(phoneNumber);

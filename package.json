@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "ts": "npx tsc index.ts",
-    "tsc": "npx tsc -w src/function.ts",
-    "dev": "nodemon build/function.js"
+    "ts": "tsc index.ts",
+    "tsc": "tsc -w",
+    "dev": "nodemon build/class.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
