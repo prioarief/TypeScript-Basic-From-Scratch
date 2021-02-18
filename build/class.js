@@ -43,7 +43,15 @@ class Admin extends User {
             write: this.write,
         };
     }
+    static isPrioHandsome() {
+        return true;
+    }
 }
-const admin = new Admin("Prio Arief Gunawan");
-admin.email = "hello.prioarief@gmail.com";
-console.log(admin.email);
+Admin.isHandsome = true; // static used to call properties or methods directly from the class itself, without having to initiate it (new)
+// const admin = new Admin("Prio Arief Gunawan");
+// admin.email = "hello.prioarief@gmail.com";
+// console.log(admin.email);
+// call static properti / method
+const { isHandsome, isPrioHandsome } = Admin;
+console.log(isHandsome);
+console.log(isPrioHandsome());

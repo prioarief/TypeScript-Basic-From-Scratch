@@ -18,6 +18,7 @@ class Admin extends User {
   write: boolean = true;
   phone: string;
   private _email: string = "";
+  static isHandsome: boolean = true; // static used to call properties or methods directly from the class itself, without having to initiate it (new)
 
   constructor(phone: string) {
     super("Prio");
@@ -35,13 +36,13 @@ class Admin extends User {
   }
 
   // setter
-  set email(val:string){
-      this._email = val
+  set email(val: string) {
+    this._email = val;
   }
 
   // getter
-  get email():string{
-      return this._email
+  get email(): string {
+    return this._email;
   }
 
   getRole(): { read: boolean; write: boolean } {
@@ -50,8 +51,18 @@ class Admin extends User {
       write: this.write,
     };
   }
+
+  static isPrioHandsome():boolean{
+      return true
+  }
 }
 
-const admin = new Admin("Prio Arief Gunawan");
-admin.email = "hello.prioarief@gmail.com"
-console.log(admin.email);
+// const admin = new Admin("Prio Arief Gunawan");
+// admin.email = "hello.prioarief@gmail.com";
+// console.log(admin.email);
+
+
+// call static properti / method
+const {isHandsome, isPrioHandsome} = Admin
+console.log(isHandsome)
+console.log(isPrioHandsome())

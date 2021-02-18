@@ -6,7 +6,7 @@
   "scripts": {
     "ts": "tsc index.ts",
     "tsc": "tsc -w",
-    "dev": "nodemon build/class.js"
+    "dev": "nodemon build/interface.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.4",
